@@ -51,7 +51,9 @@
 ;; Save here instead of littering current directory with emacs backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
 
-(require 'evil)
+;; vim mode
+;;(require 'evil)
+;;(evil-mode 1)
 
 (evil-mode 1)
 
