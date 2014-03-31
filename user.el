@@ -55,7 +55,9 @@
 ;;(require 'evil)
 ;;(evil-mode 1)
 
-(evil-mode 1)
+;; rainbow-delimiters
+(require 'rainbow-delimiters)
+(add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
 
 ;; cljx
 (add-to-list 'auto-mode-alist '("\\.cljx\\'" . clojure-mode))
