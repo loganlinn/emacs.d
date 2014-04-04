@@ -52,8 +52,8 @@
 (setq backup-directory-alist `(("." . "~/.saves")))
 
 ;; vim mode
-;;(require 'evil)
-;;(evil-mode 1)
+(require 'evil)
+(evil-mode 1)
 
 ;; rainbow-delimiters
 (require 'rainbow-delimiters)
