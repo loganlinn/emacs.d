@@ -21,7 +21,7 @@
 ;;
 ;; (require 'yaml-mode)
 ;; (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
-;; 
+;;
 ;; Adding this code will make Emacs enter yaml mode whenever you open
 ;; a .yml file
 (add-to-list 'load-path "~/.emacs.d/vendor")
@@ -52,6 +52,8 @@
 (setq backup-directory-alist `(("." . "~/.saves")))
 
 ;; vim mode
+(require 'evil-paredit)
+(add-hook 'prog-mode-hook 'evil-paredit-mode)
 (require 'evil)
 (evil-mode 1)
 
@@ -61,3 +63,10 @@
 
 ;; cljx
 (add-to-list 'auto-mode-alist '("\\.cljx\\'" . clojure-mode))
+
+;; indent file on save
+(require 'indent-file)
+(add-hook 'prog-mode-hook 'indent-file-when-save)
+
+;; line numbers
+(require 'linum-relative)
