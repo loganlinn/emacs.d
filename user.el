@@ -51,12 +51,6 @@
 ;; Save here instead of littering current directory with emacs backup files
 (setq backup-directory-alist `(("." . "~/.saves")))
 
-;; vim mode
-(require 'evil-paredit)
-(add-hook 'prog-mode-hook 'evil-paredit-mode)
-(require 'evil)
-(evil-mode 1)
-
 ;; rainbow-delimiters
 (require 'rainbow-delimiters)
 (add-hook 'prog-mode-hook 'rainbow-delimiters-mode)
