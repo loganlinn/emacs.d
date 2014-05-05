@@ -33,7 +33,7 @@ Face used to dim parentheses." :group (quote starter-kit-faces))
 
 (defun esk-pretty-fn nil (font-lock-add-keywords nil `(("(\\(fn\\>\\)" (0 (progn (compose-region (match-beginning 1) (match-end 1) "ƒ") nil))))))
 
-(add-hook 'clojure-mode-hook 'esk-pretty-fn)
+;;(add-hook 'clojure-mode-hook 'esk-pretty-fn)
 
 ;;;***
 
